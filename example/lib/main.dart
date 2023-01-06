@@ -7,7 +7,10 @@ import 'package:flutter_nfc_plugin/models/nfc_message.dart';
 import 'package:flutter_nfc_plugin/models/nfc_state.dart';
 import 'package:flutter_nfc_plugin/nfc_plugin.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(MyApp());
+}
 
 class MyApp extends StatefulWidget {
   @override
